@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "HelloWorld_React_Test_APP"
+  description: "HelloWorld_React_Test_APP"
+  links:
+    - title: Website
+      # Change the template in the future to collect the domain name mtk8s.io
+      # parameters.properties.name(type: string,default: 'world!')
+      url: https://HelloWorld_React_Test_APP.mtk8s.io
+  annotations:
+    argocd/app-name: "HelloWorld_React_Test_APP"
+    sonarqube.org/project-key: "HelloWorld_React_Test_APP"
+    jenkins.io/job-full-name: "HelloWorld_React_Test_APP_App_Pipeline"
+    github.com/project-slug: anishthodivial/HelloWorld_React_Test_APP
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "HelloWorld_React_Test_APP"
+spec:
+  type: website
+  lifecycle: experimental
+  owner: "group:default/voyagers-corp"

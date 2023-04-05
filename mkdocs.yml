@@ -1,0 +1,7 @@
+site_name: "HelloWorld_React_Test_APP"
+docs_dir: docs
+site_description: "HelloWorld_React_Test_APP"
+nav:
+  - Introduction: index.md
+plugins:
+  - techdocs-core
